@@ -21,7 +21,7 @@ Vagrant.configure("2") do |config|
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
-  config.vm.network :private_network, ip: "192.168.56.50"
+  config.vm.network :private_network, ip: "192.168.33.10"
 
   # Set share folder permissions to 777 so that apache can write files
   config.vm.synced_folder ".", "/vagrant", :extra => 'dmode=777,fmode=666'
@@ -47,7 +47,15 @@ Vagrant.configure("2") do |config|
         "server_repl_password" => "vagrant",
         "server_debian_password" => "vagrant",
         "bind_address" => "0.0.0.0"
-      }
+      },
+      "oh_my_zsh" => {
+        :users => [
+          {
+            :login => 'vagrant',
+            :theme => 'blinks',
+            :plugins => ['git', 'gem']
+          }
+        ] 
     })
   end
 
