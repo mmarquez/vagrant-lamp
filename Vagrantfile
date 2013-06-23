@@ -55,7 +55,8 @@ Vagrant.configure("2") do |config|
             :theme => 'blinks',
             :plugins => ['git', 'gem']
           }
-        ] 
+        ]
+      }
     })
   end
 
