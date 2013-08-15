@@ -14,7 +14,7 @@ Download and Install [VirtualBox](http://www.virtualbox.org/)
 
 Download a vagrant box (name of the box is supposed to be lucid32)
 
-    $ vagrant box add lucid32 http://files.vagrantup.com/lucid32.box
+    $ vagrant box add lucid64 http://files.vagrantup.com/lucid64.box
 
 Clone this repository
 
